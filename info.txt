@@ -1,0 +1,8 @@
+//дать права на выполнение
+chmod +x command
+//очистить отсимвола возврата каретки
+sed -i -e 's/\r$//' command
+// установить значение
+./command redis add key value
+// удалить значение
+./command redis del key
